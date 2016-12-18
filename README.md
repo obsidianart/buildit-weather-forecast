@@ -1,12 +1,12 @@
 # BuildIt Weather App
 - The test can be seen live here [http://www.obsidianart.com/projects/ai-weather/](http://www.obsidianart.com/projects/ai-weather/)
 - Please refer to other public projects for more complex applications (e.g. [https://github.com/obsidianart/react-course-2048](React course 2048))
-- This project uses a very simple structure, it's an experiment to apply some tecniques (like full image import and component-like css)
+- This project uses a very simple structure, it's an experiment to apply some techniques (like full image import and component-like css)
 
 
 
 # What would I do next?
-- Read again everything, few things need readeability improvment
+- Read again everything, few things need readeability improvement
 - Write unit tests, starting from the answerService
 - Write more e2e
 - Remove the phone frame on small devices and adapt the size
