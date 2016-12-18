@@ -94,6 +94,14 @@ export default function (question, forecast) {
       answer: ()=>`Sex is in no way related to the weather...`
     },
     {
+      question: 'birthday',
+      answer: ()=>`I will never die, so I don't really care`
+    },
+    {
+      question: 'how old you',
+      answer: ()=>`I'm very young`
+    },
+    {
       question: 'umbrella today',
       answer: ()=>willItRainToday(forecast)?`I'd advice to take an Umbrella`:`You can leave your umbrella home`
     },
