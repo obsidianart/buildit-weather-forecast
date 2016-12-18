@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="2">
+
+  <testsuite name="happy-path"
+    errors="0" failures="0" hostname="" id="" package="happy-path" skipped="0"
+    tests="2" time="6.100" timestamp="Sun, 18 Dec 2016 19:32:53 GMT">
+  
+    <testcase name="Get forecast" time="3.207" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Type hello" time="2.893" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+  
+  </testsuite>
+</testsuites>

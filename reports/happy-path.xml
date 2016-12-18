@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="happy-path"
+    errors="1" failures="0" hostname="" id="" package="happy-path" skipped="0"
+    tests="1" time="0.01000" timestamp="Sun, 18 Dec 2016 19:31:10 GMT">
+  
+    <testcase name="Type hello" time="0.01000" assertions="0">
+    </testcase>
+      <system-err>
+          Error while running [Happy Path / Type hello]:
+
+  ReferenceError: browser is not defined
+    at Object.Type hello (/Users/obsidianart/HDD/GIT/buildit-weather-forecast/tests/happy-path.js:37:47)
+    at Module.call (/usr/local/lib/node_modules/nightwatch/lib/runner/module.js:62:34)
+    at /usr/local/lib/node_modules/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:67:7)
+      </system-err>
+  
+  
+  </testsuite>
+</testsuites>

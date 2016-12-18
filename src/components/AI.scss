@@ -1,0 +1,88 @@
+@import './../style/animations';
+
+.wrapper {
+    width:100%;
+    text-align: center;
+    padding-left:20px;
+    padding-right:20px;
+
+    .input {
+        font-size: 22px;
+        margin-bottom:20px;
+        padding: 10px 10px 10px 5px;
+        box-sizing: border-box;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid white;
+        color: white;
+        background: none;
+        
+        &:focus {
+            outline:none;
+        }
+
+        &::-webkit-input-placeholder {
+           color: rgba(255, 255, 255, 0.65);
+        }
+
+        &::-moz-placeholder {  /* Firefox 19+ */
+           color: rgba(255, 255, 255, 0.65);  
+        }
+
+        &:-ms-input-placeholder {  
+           color: rgba(255, 255, 255, 0.65);  
+        }
+    }
+
+    .getAnswer {
+        $arrow-bg-color: white;
+        $arrowSize: 18px;
+        transition: all 0.7s ease;
+
+        position: relative;
+        top: -15px;
+        right: 13px;
+        display: inline-block;
+        cursor: pointer;
+        opacity: 0.7;
+
+        &:hover {
+            opacity: 1;
+        }
+        
+        &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          width: 0;
+          height: 0;
+
+          border-style: solid;
+          right: -$arrowSize;
+          border-width: $arrowSize / 2;
+          border-color: transparent transparent transparent $arrow-bg-color;
+        }
+
+        &.rotate {
+            transform: rotate(90deg) translateX(5px) translateY(-10px);
+            opacity: 1;
+        }
+    }
+
+    .answer {
+        max-height: 0;
+        height: 3em;
+        overflow: hidden;
+        transition: max-height 1s ease;
+        animation: fadein 0.7s ease-in;
+        .text {
+            animation: fadein 0.7s ease-in;
+        }
+        &.ready{
+            max-height: 3em;
+        }
+    }
+    .loader{
+        animation: fadein 0.7s ease-in;
+    }
+}

@@ -1,0 +1,25 @@
+.wrapper {
+    overflow-x: scroll;
+}
+
+.days {
+    list-style-type: none;
+    padding: 0;
+    position: relative;
+    width: 600px;
+    background: rgba(0, 0, 0, 0.07);
+
+    li {
+        padding: 8px;
+        margin-right: 2px;
+        display: inline-block;
+        cursor: pointer;
+        z-index: 1;
+        position: relative;
+        overflow: scroll-x;
+    }
+    .current {
+        background-color: white;
+        color: #3498dc;
+    }
+}

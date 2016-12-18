@@ -1,0 +1,33 @@
+@import './../style/animations';
+
+.wrapper {
+    overflow-x:scroll;
+}
+
+.day {
+    display:block;
+    margin-bottom: 10px;
+    overflow: auto;
+    text-align: center;
+    animation: fadein 0.7s ease-in;
+
+    .hour {
+        float: left;
+        display: block;
+    }
+
+    .temperature {
+        font-size: 26px;
+        margin-top: -10px;
+        font-weight: 200;
+    }
+
+    .time {
+        font-size: 12px;
+        font-weight: 200;
+    }
+}
+
+.icon {
+    filter: grayscale(50%); // Making icons less colorful to fit in the interface
+}

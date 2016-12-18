@@ -1,0 +1,44 @@
+$primary-color: #3498dc;
+
+.background {
+    position: relative;
+    margin:20px auto 0 auto;
+    height: 923px;
+    width: 621px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 621px;
+}
+
+.phoneScreen {
+    position: absolute;
+    left: 129px;
+    width: 360px;
+    height: 640px;
+    top: 82px;
+    background: white;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: $primary-color;
+    color:white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: flex-start; /* align items in Main Axis */
+    align-items: stretch; /* align items in Cross Axis */
+    align-content: stretch; /* Extra space in Cross Axis */
+
+}
+
+.flexboxFill {
+    flex: 1; /* same as flex: 1 1 auto; */
+    align-items: center;
+    display: flex;
+}
+
+.title {
+    text-align: center;
+    cursor: pointer;
+}
