@@ -14,7 +14,7 @@ const parseForecastApiResponse = forecast=> {
       time: byHour.dt * 1000, //timestamp comes in seconds format from api
       description: byHour.weather[0].main,
       temperature: byHour.main.temp,
-      icon: byHour.weather[0].icon,
+      icon: byHour.weather[0].id,
       rain: byHour.rain,
       clouds: byHour.clouds
     }))
